@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TouristDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_type"
+        android:layout_width="match_parent"
+        android:background="@drawable/bck4"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/hobbiesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Hobbies: " />
+
+            <EditText
+                android:id="@+id/hobbiesEditText"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:gravity="top|left"
+                android:textColor="#ffffff"
+                android:maxLines="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+
+            <TextView
+                android:id="@+id/interestTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Area of Interest: " />
+
+            <EditText
+                android:id="@+id/interestEditText"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:gravity="top|left"
+                android:textColor="#ffffff"
+                android:maxLines="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/joinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="JOIN"
+                android:onClick="onJoinButtonClick"/>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

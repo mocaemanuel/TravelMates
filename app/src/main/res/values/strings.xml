@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TravelMates3</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_show_match">ShowMatchActivity</string>
+</resources>

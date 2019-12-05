@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_log_in"
+        android:layout_width="match_parent"
+        android:background="@drawable/bck4"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/usernameTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Username: " />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <TextView
+                android:id="@+id/passwdTextButton"
+                android:layout_width="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Password: " />
+
+            <EditText
+                android:id="@+id/passwdEditText"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="DONE"
+                android:onClick="onLogInClick"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

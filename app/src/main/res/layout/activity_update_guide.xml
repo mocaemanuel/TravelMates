@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateGuideActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_guide_details"
+        android:layout_width="match_parent"
+        android:background="@drawable/bck4"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+
+                <TextView
+                    android:id="@+id/availableSinceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="Available since: " />
+
+                <EditText
+                    android:id="@+id/availableSinceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#ffffff"
+                    android:hint="YYYY/MM/DD"
+                    android:inputType="date" />
+
+
+                <TextView
+                    android:id="@+id/tillTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="Till: " />
+
+                <EditText
+                    android:id="@+id/tillEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#ffffff"
+                    android:hint="YYYY/MM/DD"
+                    android:inputType="date"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="UPDATE"
+                    android:onClick="onUpdateButtonClick"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

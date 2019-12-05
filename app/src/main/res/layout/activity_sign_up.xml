@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_sign_up"
+        android:layout_width="match_parent"
+        android:background="@drawable/bck4"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Name: " />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:id="@+id/surnameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Surname: " />
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/mailTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Mail: " />
+
+            <EditText
+                android:id="@+id/mailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/residenceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Residence: " />
+
+            <EditText
+                android:id="@+id/residenceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Age: " />
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/passwdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Password: " />
+
+            <EditText
+                android:id="@+id/passwdEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/touristButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="TOURIST"
+                android:onClick="onTouristButtonClick"/>
+
+            <Button
+                android:id="@+id/guideButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="GUIDE"
+                android:onClick="onGuideButtonClick"/>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
